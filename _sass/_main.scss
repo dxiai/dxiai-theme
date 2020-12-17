@@ -13,6 +13,7 @@ $modal-content-width: 800px;
 
 @import "../node_modules/bulma/bulma.sass";
 $hero-darken: $dark !default;
+$hero-darken: $primary !default;
 
 @import "layout";
 @import "syntax";
