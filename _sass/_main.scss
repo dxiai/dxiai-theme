@@ -4,6 +4,7 @@
 
 $family-sans-serif: 'Montserrat', sans-serif;
 $primary: #0064a6 !default;
+$ghcolor: #d5d5cc;
 
 $tabs-link-active-color: $primary;
 $tabs-link-active-border-bottom-color: $primary;
@@ -19,5 +20,5 @@ $modal-content-width: 800px;
 @import "../node_modules/bulma-block-list/src/block-list.scss";
 
 .gh-sponsor {
-  color: #ea4aaa;
+  color: $ghcolor;
 }
