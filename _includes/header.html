@@ -12,8 +12,8 @@
             </a>
         </div>
         <div class="navbar-menu" id="navMenu">
-            {% if page.show_navigation != "false" %}
             <div class="navbar-start">
+                {% unless page.hide_navigation %}
                 {% if site.data.navigation %}
                 {% for item in site.data.navigation %}
                     {% if item.dropdown %}
@@ -32,8 +32,8 @@
                 {% else %}
                     <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">Home</a>
                 {% endif %}
+                {% endunless %}
             </div>
-            {% endif %}
 
             <div class="navbar-end">
                 {% if site.gh_sponsor %}
