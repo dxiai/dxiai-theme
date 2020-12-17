@@ -12,8 +12,8 @@
             </a>
         </div>
         <div class="navbar-menu" id="navMenu">
+            {% if page.show_navigation != "false" %}
             <div class="navbar-start">
-                <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">Home</a>
                 {% if site.data.navigation %}
                 {% for item in site.data.navigation %}
                     {% if item.dropdown %}
@@ -29,8 +29,11 @@
                     <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
                     {% endif %}
                 {% endfor %}
+                {% else %}
+                    <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">Home</a>
                 {% endif %}
             </div>
+            {% endif %}
 
             <div class="navbar-end">
                 {% if site.gh_sponsor %}
