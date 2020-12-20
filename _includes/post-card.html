@@ -13,6 +13,10 @@
             {% if post.image %}
             <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
             {% endif %}
+
+            {% if post.categories %}
+            <p> Hello Categories </p>
+            {% endif %}
             
             {% if post.summary %}
                 {{ post.summary | markdownify }}

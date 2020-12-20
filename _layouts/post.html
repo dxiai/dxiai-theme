@@ -6,6 +6,9 @@ layout: default
 
     <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
     
+    {% if post.categories %}
+    <p> Hello Categories </p>
+    {% endif %}
 
     {{ content }}
 </div>
