@@ -14,8 +14,10 @@
             <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
             {% endif %}
             {% if post.categories %}
-            <nav class="breadcrumb" >
-            {% for category in post.categories %}
+            {{ post.categories }}
+            {% assign categories = post.categories %}
+            <nav class="breadcrumb">
+            {% for category in categories %}
                 <ul>
                     <li>{{ category }}</li>
                 </ul>
