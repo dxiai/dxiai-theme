@@ -18,7 +18,9 @@ $hero-darken: $dark !default;
 @import "layout";
 @import "syntax";
 @import "showcase";
+@import "ghcompat";
 @import "../node_modules/bulma-block-list/src/block-list.scss";
+
 
 .gh-sponsor {
   color: $ghcolor;

@@ -1,0 +1,19 @@
+.alert {
+    @extend .notification;
+    
+    &.alert-primary {
+        @extend .notification.is-primary;
+    }
+    &.alert-success {
+        @extend .notification.is-success;
+    }
+    &.alert-info {
+        @extend .notification.is-info.is-light;
+    }
+    &.alert-danger {
+        @extend .notification.is-danger.is-light;
+    }
+    &.alert-warning {
+        @extend .notification.is-warning.is-light;
+    }
+}
