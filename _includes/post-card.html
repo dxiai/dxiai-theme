@@ -21,10 +21,9 @@
             {% endif %}
         </div>
         <div class="has-text-right has-text-centered-mobile">
-            <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Read more</a>
+            <p><a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Read more</a></p>
+            <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
         </div>
+        
     </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
-    </footer>
 </div>
