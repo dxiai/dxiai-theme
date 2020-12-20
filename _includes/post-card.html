@@ -15,7 +15,13 @@
             {% endif %}
 
             {% if post.categories %}
-            <p> Hello Categories </p>
+            <nav class="breadcrumb">
+                <ul>
+                {% for category in post.categories %}
+                <li>{{ category }} </li>
+                {% endfor %}
+                </ul>
+            </nav>
             {% endif %}
             
             {% if post.summary %}

@@ -7,7 +7,13 @@ layout: default
     <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
     
     {% if page.categories %}
-    <p> Hello Categories </p>
+    <nav class="breadcrumb">
+      <ul>
+      {% for category in page.categories %}
+        <li>{{ category }} </li>
+      {% endfor %}
+      </ul>
+    </nav>
     {% endif %}
 
     {{ content }}
