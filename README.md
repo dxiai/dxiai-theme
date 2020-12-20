@@ -1,9 +1,6 @@
-# bulma-clean-theme
+# dxiai-theme
 
-[![Gem Version](https://badge.fury.io/rb/bulma-clean-theme.svg)](https://badge.fury.io/rb/bulma-clean-theme)
-![Gem](https://img.shields.io/gem/dt/bulma-clean-theme.svg)
-
-This is a clean and simple Jekyll Theme built with the [Bulma](https://bulma.io/) framework, providing a modern looking site to start with. 
+This is a clean and simple Jekyll Theme built with the [Bulma](https://bulma.io/) framework, providing a modern looking site to start with. It is based on [chrisrhymes/bulma-clean-theme](https://github.com/chrisrhymes/bulma-clean-theme) but has some bells and whistles for our website.
 
 ## Contents
 
@@ -38,25 +35,12 @@ This is a clean and simple Jekyll Theme built with the [Bulma](https://bulma.io/
 
 **This theme requires Jekyll 3.8 so it is compatible with GitHub Pages.**
 
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "bulma-clean-theme"
-```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: bulma-clean-theme
+remote_theme: dxiai-theme
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install bulma-clean-theme
 
 ## Usage
 
@@ -620,7 +604,7 @@ comments: false
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/chrisrhymes/bulma-clean-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dxiai/dxiai-theme. This project is intended to be a safe, welcoming space for collaboration.
 
 ## Development
 
