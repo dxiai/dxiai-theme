@@ -14,9 +14,13 @@
             <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
             {% endif %}
             {% if post.categories %}
-            <div>
-                {{ post.categories }}
-            </div>
+            <nav class="breadcrumb" >
+            {% for category in post.categories %}
+                <ul>
+                    <li>{{ category }}</li>
+                </ul>
+            {% endfor %}
+            </nav>
             {% endif %}
             {% if post.summary %}
                 {{ post.summary | markdownify }}
