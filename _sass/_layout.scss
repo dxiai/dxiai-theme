@@ -47,7 +47,7 @@ div.highlight {
 }
 
 .button, .notification {
-    .fa, .fas, .fa:first-child:last-child, .fas:first-child:last-child {
-        margin-right: 1em;
+    .fa, .fas, .fa:first-child, .fas:first-child, .fa:first-child:last-child, .fas:first-child:last-child {
+        margin-right: .5em;
     }
 }
