@@ -5,16 +5,6 @@ layout: default
 <div class="content">
 
     <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
-    
-    {% if page.categories %}
-    <nav class="breadcrumb">
-      <ul>
-      {% for category in page.categories %}
-        <li class="is-active"><a href="#">{{ category }}</a></li>
-      {% endfor %}
-      </ul>
-    </nav>
-    {% endif %}
 
     {{ content }}
 </div>

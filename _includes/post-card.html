@@ -14,16 +14,6 @@
             <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
             {% endif %}
 
-            {% if post.categories %}
-            <nav class="breadcrumb">
-                <ul>
-                {% for category in post.categories %}
-                <li class="is-active"><a href="#">{{ category }}</a></li>
-                {% endfor %}
-                </ul>
-            </nav>
-            {% endif %}
-            
             {% if post.summary %}
                 {{ post.summary | markdownify }}
             {% else %}
