@@ -45,3 +45,9 @@ div.highlight {
         margin-bottom: 0.75rem;
     }
 }
+
+.button, .notification {
+    .fa, .fas, .fa:first-child:last-child, .fas:first-child:last-child {
+        margin-right: 1em;
+    }
+}
