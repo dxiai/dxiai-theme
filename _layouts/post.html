@@ -5,14 +5,7 @@ layout: default
 <div class="content">
 
     <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
-    {% if page.categories %}
-    <nav class="breadcrumb">
-      {% assign categories = page.categories %}
-      {% for category in categories %}
-      <span>{{category}}</span>
-      {% endfor %}
-    </nav>
-    {% endif %}
+    
 
     {{ content }}
 </div>
