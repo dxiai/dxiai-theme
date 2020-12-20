@@ -17,3 +17,23 @@
         @extend .notification.is-warning.is-light;
     }
 }
+
+.btn {
+    @extend .button;
+    
+    &.btn-primary {
+        @extend .button.is-primary;
+    }
+    &.btn-success {
+        @extend .button.is-success;
+    }
+    &.btn-info {
+        @extend .button.is-info.is-light;
+    }
+    &.btn-danger {
+        @extend .button.is-danger.is-light;
+    }
+    &.btn-warning {
+        @extend .button.is-warning.is-light;
+    }
+}
