@@ -37,3 +37,9 @@
         @extend .button.is-warning.is-light;
     }
 }
+
+.mjx-container *, 
+.mjx-container ::before, 
+.mjx-container ::after {
+    box-sizing: unset;
+}
