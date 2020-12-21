@@ -21,13 +21,13 @@ The message is required but the status defaults to 'is-warning' and the icon def
 
 {% include notification.html message="This is the message for the notification" 
 status="is-danger" 
-icon="fas fa-exclamation-triangle" %}
+icon="fa fa-exclamation-triangle" %}
 
 {% raw %}
 ```liquid
 {% include notification.html message="This is the message for the notification" 
 status="is-danger" 
-icon="fas fa-exclamation-triangle" %}
+icon="fa fa-exclamation-triangle" %}
 ```
 {% endraw %}
 
