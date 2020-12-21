@@ -1,0 +1,7 @@
+<nav class="pagination is-centered">
+    {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}/blog/{{ paginator.next_page_path }}" class="pagination-next is-info">Next</a>
+    {% else %}
+    <p class="" disabled >&nbsp;</p>
+    {% endif %}
+</nav>

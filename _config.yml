@@ -12,7 +12,7 @@ gh_sponsor: phish108
 #hide_share_buttons: true
 #theme_color: '#eeeeee'
 
-paginate: 5
+paginate: 10
 paginate_path: "/blog/page:num"
 
 # Disqus Comments
@@ -60,9 +60,8 @@ defaults:
       path: ""
       type: "posts"
     values:
-      author: "C.S. Rhymes"
+      author: "DxI Team"
       layout: post
-      image: https://via.placeholder.com/1200x800
       show_sidebar: true
 
 markdown: kramdown

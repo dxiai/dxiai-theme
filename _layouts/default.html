@@ -35,8 +35,13 @@
                     {{ content }}
                 </div>
                 {% if site.posts %}
-                <div class="column {{ content_width }}">
-                    {% include latest-posts.html %}
+                {% for post in paginator.posts %}
+                    <div class="column is-12">
+                        {% include post-card.html %}
+                    </div>
+                {% endfor %}
+                <div class="column is-12">
+                    {% include pagination2.html %}
                 </div>
                 {% endif %}
             </div>
