@@ -4,7 +4,7 @@
         {% unless page.hide_navigation %}
         <div class="navbar-brand">
             <a href="/" class="navbar-item">dxi.ai</a>
-            {% unless site.baseurl == "/" %}
+            {% unless site.baseurl == "" %}
             <a href="{{ site.baseurl }}/" class="navbar-item">
                 {{ site.title }}
             </a>
