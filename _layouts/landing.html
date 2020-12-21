@@ -12,12 +12,8 @@ layout: default
 
 {% if site.posts %}
 
-<div class="content">
-{{ site.posts.size}}
-</div>
-
 {% for post in site.posts limit:3 %}
-    <div class="column is-12">
+    <div class="column is-4-desktop">
         {% include post-card.html %}
     </div>
 {% endfor %}
