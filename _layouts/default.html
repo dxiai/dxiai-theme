@@ -34,16 +34,6 @@
                     {% include gallery.html %}
                     {{ content }}
                 </div>
-                {% if site.posts %}
-                {% for post in paginator.posts %}
-                    <div class="column is-12">
-                        {% include post-card.html %}
-                    </div>
-                {% endfor %}
-                <div class="column is-12">
-                    {% include pagination2.html %}
-                </div>
-                {% endif %}
             </div>
         </div>
     </section>
