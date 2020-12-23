@@ -6,7 +6,7 @@ $family-sans-serif: 'Montserrat', sans-serif;
 $primary: #0064a6 !default;
 $ghcolor: #d5d5cc;
 
-$pagination-current-background-color: $primary;
+$pagination-current-background-color: $primary !default;
 
 $tabs-link-active-color: $primary;
 $tabs-link-active-border-bottom-color: $primary;
