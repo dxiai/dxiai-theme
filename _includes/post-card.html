@@ -13,7 +13,7 @@
             {% if post.image %}
             <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
             {% endif %}
-            <p>By <i>{{ post.author }}</i> on {{ post.date | date: "%d.%m.%Y" }}</p>
+            <p>Von <i>{{ post.author }}</i> am {{ post.date | date: "%d.%m.%Y" }}</p>
 
             {% if post.summary %}
                 {{ post.summary | markdownify }}
