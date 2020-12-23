@@ -4,7 +4,7 @@ layout: default
 
 <div class="content">
 
-<p>Von <i>{{ post.author }}</i> am {{ post.date | date: "%d.%m.%Y" }}</p>
+  <p>{{ post.date | date: "%d.%m.%Y" }}, von <i>{{ post.author }}</i></p>
 
     {{ content }}
 </div>
