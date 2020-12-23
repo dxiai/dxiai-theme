@@ -1,5 +1,5 @@
 {
-  "name": "bulma-clean-theme",
+  "name": "dxiai-theme",
   "description": "This is a clean and simple Jekyll Theme built with the Bulma framework, providing a modern looking site to start with.",
   "version": "1.0.0",
   "main": "index.js",
@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "chrisrhymes",
+  "author": "dxiai",
   "license": "MIT",
   "dependencies": {
     "bulma": "^0.9.1",
