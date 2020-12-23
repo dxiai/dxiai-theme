@@ -1,0 +1,52 @@
+<footer class="footer">
+    <div class="container">
+        
+        {% if site.footer_menu %}
+        <div class="columns is-multiline">
+            {% for item in site.data[site.footer_menu] %}
+            <div class="column has-text-justified is-3-desktop is-6-tablet">
+                <div class="column is-10">
+                    <div class="title">
+                {% if item.title %}
+                        {{ item.title }}
+                {% else %}
+                        &nbsp;
+                {% endif %}
+                </div>
+                
+                {% if item.content %}
+                <div class="content has-text-grey">
+                    {{ item.content | markdownify }}
+                </div>
+                {% endif %}
+
+                {% if item.links %}
+                {% for link in item.links %}
+                <div>
+                    {% assign icon_class = "fa fa-square-o" %}
+                    {% if link.icon %}
+                    {% capture icon_class %}fa fa-lg fa-{{ link.icon }}{% endcapture%}
+                    {% endif %}
+
+                    {% if link.link %}
+                    <a href="{{ link.link | relative_url }}" class="button is-normal is-ghost">
+                        <i class="{{ icon_class }}"></i> {{ link.name }}
+                    </a>
+                    {% elsif link.url %}
+                    <a href="{{ link.url }}" target="_blank" class="button is-normal is-ghost">
+                        <i class="{{ icon_class }}"></i> {{ link.name }}
+                    </a>
+                    {% else %}
+                    <p class="button is-ghost"><i class="{{ icon_class }}"></i> {{ link.name }}</p>
+                    {% endif%}
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+    </div>
+</footer>

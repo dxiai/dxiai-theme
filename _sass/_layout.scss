@@ -58,3 +58,42 @@ div.highlight {
         margin-right: 0em;
     }
 }
+
+.title, .subtitle {
+    font-family: 'Helvetica Rounded LT Std', sans-serif;
+}
+
+footer {
+    .title, .subtitle {
+        font-size: 1.2em;
+        font-weight: 900;
+        color: hsl(0, 0%, 48%);
+    }
+
+    .content {
+        font-size: 0.9em;
+    }
+}
+
+.button {
+    &.is-ghost {
+        background: none;
+        border-color: transparent;
+        color: $grey;
+        text-decoration: none;
+
+        &.is-hovered, &:hover {
+            color: $primary;
+            // text-decoration: underline;
+
+            .fa::before, .fa {
+                text-decoration: none;
+            }    
+        }
+        
+        .fa:hover {
+            text-decoration: none !important;
+        }
+    }
+  }
+  

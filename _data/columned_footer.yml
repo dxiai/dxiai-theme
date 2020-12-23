@@ -1,0 +1,51 @@
+- title: dxi.ai
+  content: | 
+    Dieses Thema ist ein Beipspiel für einen multicolumn Footer mit einem externen Fragment
+    mit ein bisschen `Markdown` und **anderem** Schnickschnack. 
+
+    * Lehre
+    * Forschung
+    * Entwicklung
+
+- title: Social
+  links: 
+  - name: Twitter 
+    url: https://twitter.com
+    icon: twitter
+  - name: YouTube
+    url: https://youtube.com
+    icon: youtube-play
+  - name: Github
+    link: https://github.com
+    icon: github
+
+- links: 
+  - name: Styleguide
+    link: https://www.dxi.ai/tmppages/
+  - name: Imprint
+    link: https://www.dxi.ai/imprint.md
+  - name: IAS
+    url: https://www.zhaw.ch
+
+- title: Big blurb info
+  content: | 
+    some other content with some **markdown**.
+  links:
+  - name: Creative Commons 4.0 SA
+    icon: creative-commons
+  - name: Cookie Frei
+    icon: user-secret
+
+- title: Internal Links
+  content: | 
+    Hier sieht man sehr schön, warum links mit und Ohne Icons **nicht** vermischt werden sollten. 
+    And since everything is creative commons 4.0 sa, we are fine with linking.
+  links:
+  - name: Moodle
+    url: https://moodle0.zhaw.ch
+    icon: graduation-cap
+  - name: dxi.ai
+    link: /
+  - name: lo-f.at
+    url: https://lo-f.at/glahn/
+  
