@@ -64,9 +64,15 @@ div.highlight {
 }
 
 footer {
-    .title, .subtitle {
+    .title, .subtitle, .content h1, .content h2 {
         font-size: 1.2em;
         font-weight: 900;
+        color: hsl(0, 0%, 48%);
+    }
+
+    .content h3, .content h4 {
+        font-size: 1em;
+        font-weight: 600;
         color: hsl(0, 0%, 48%);
     }
 

@@ -67,7 +67,7 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 
-footer_menu: columned_footer
+footer_menu: footer
 
 collections:
   products: 
