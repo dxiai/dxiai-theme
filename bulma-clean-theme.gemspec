@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "dxiai-theme"
-  spec.version       = "0.10.3"
   spec.authors       = ["dxiai"]
   spec.email         = ["cpglahn@gmail.com"]
+  spec.version       = "0.10.5"
 
   spec.summary       = "Clean and simple Jekyll theme built using Bulma"
   spec.homepage      = "https://www.github.com/dxiai/dxiai-theme"
